@@ -46,7 +46,14 @@ export default defineConfig((/* ctx */) => {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        APP_NAME: process.env.APP_NAME,
+        APP_DESCRIPTION: process.env.APP_DESCRIPTION,
+        COMPANY_NAME: process.env.COMPANY_NAME,
+        SUPPORT_EMAIL: process.env.SUPPORT_EMAIL,
+        SUPPORT_WHATSAPP: process.env.SUPPORT_WHATSAPP,
+        SUPPORT_TELEGRAM: process.env.SUPPORT_TELEGRAM,
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
